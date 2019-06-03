@@ -6,8 +6,20 @@ function App() {
   return (
     <div className="App">
     <img src = {movieLogos} />
-      <h1>Welcome 2 kodflix</h1>
+     <br /><br /><br /> 
+        <div className = 'container'>
+            <div className = 'item'>React x</div>
+            <div className = 'item'>React y</div>
+            <div className = 'item'>React z</div>
+        </div>
+        <div className = 'container'>
+        <div className = 'item'>React 1</div>
+        <div className = 'item'>React 2</div>
+        <div className = 'item'>React 3</div>
     </div>
+ 
+        </div>
+
   );
 }
 
