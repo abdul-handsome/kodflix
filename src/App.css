@@ -9,10 +9,26 @@
 .item{
   flex: 1;
   padding: 30px;
+  border: 1px solid goldenrod;
+  position: relative;
 }
 
 @media only screen and (max-width: 600px){
   .container{
     flex-direction: column;
   }
+}
+
+.overlay{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background-color: skyblue;
+  width: 100%;
+  left: 0;
+  opacity: .5;
+}
+
+.item:hover .overlay{
+  display: block;
 }

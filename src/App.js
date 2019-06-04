@@ -15,19 +15,37 @@ function App() {
   return (
     <div className="App">
         <div className = 'container'>
-            <div className = 'item'><img src = {movieLogos1} /></div>
-            <div className = 'item'><img src = {movieLogos2} /></div>
-            <div className = 'item'><img src = {movieLogos3} /></div>
+            <div className = 'item'><img src = {movieLogos1} />
+              <div className = 'overlay'><h1>Sword of Destiny</h1></div>
+            </div>
+            <div className = 'item'><img src = {movieLogos2} />
+              <div className = 'overlay'><h1>John Wane</h1></div>
+            </div>
+            <div className = 'item'><img src = {movieLogos3} />
+            <div className = 'overlay'><h1>Goodfellas</h1></div>
+            </div>
         </div>
         <div className = 'container'>
-            <div className = 'item'><img src = {movieLogos4} /></div>
-            <div className = 'item'><img src = {movieLogos5} /></div>
-            <div className = 'item'><img src = {movieLogos6} /></div>
+            <div className = 'item'><img src = {movieLogos4} />
+            <div className = 'overlay'><h1>al Capone</h1></div>
+            </div>
+            <div className = 'item'><img src = {movieLogos5} />
+            <div className = 'overlay'><h1>Scarface</h1></div>
+            </div>
+            <div className = 'item'><img src = {movieLogos6} />
+            <div className = 'overlay'><h1>Superman</h1></div>
+            </div>
         </div>
         <div className = 'container'>
-            <div className = 'item'><img src = {movieLogos7} /></div>
-            <div className = 'item'><img src = {movieLogos8} /></div>
-            <div className = 'item'><img src = {movieLogos9} /></div>
+            <div className = 'item'><img src = {movieLogos7} />
+            <div className = 'overlay'><h1>TinTin</h1></div>
+            </div>
+            <div className = 'item'><img src = {movieLogos8} />
+            <div className = 'overlay'><h1>Cliffhanger</h1></div>
+            </div>
+            <div className = 'item'><img src = {movieLogos9} />
+            <div className = 'overlay'><h1>the Good,the Bad,the Ugly</h1></div>
+            </div>
         </div>
     </div>
       
