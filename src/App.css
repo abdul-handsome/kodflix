@@ -9,26 +9,31 @@
 .item{
   flex: 1;
   padding: 30px;
-  border: 1px solid goldenrod;
   position: relative;
+  border: 1px solid goldenrod;
+  overflow: hidden;
+  
+}
+
+
+
+.overlay{
+  transition: bottom ease .5s;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  opacity: 0.6;
+  background-color: skyblue;
+}
+
+.item:hover .overlay{
+  opacity: .6;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 600px){
   .container{
     flex-direction: column;
   }
-}
-
-.overlay{
-  display: none;
-  position: absolute;
-  bottom: 0;
-  background-color: skyblue;
-  width: 100%;
-  left: 0;
-  opacity: .5;
-}
-
-.item:hover .overlay{
-  display: block;
 }
