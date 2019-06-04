@@ -1,4 +1,5 @@
 import React from 'react';
+import Stack from './Stack';
 import movieLogos1 from './myImages/movie01.jpg';
 import movieLogos2 from './myImages/movie02.jpg';
 import movieLogos3 from './myImages/movie03.jpg';
@@ -15,42 +16,26 @@ function App() {
   return (
     <div className="App">
         <div className = 'container'>
-            <div className = 'item'><img src = {movieLogos1} />
-              <div className = 'overlay'><h1>Sword of Destiny</h1></div>
-            </div>
-            <div className = 'item'><img src = {movieLogos2} />
-              <div className = 'overlay'><h1>John Wane</h1></div>
-            </div>
-            <div className = 'item'><img src = {movieLogos3} />
-            <div className = 'overlay'><h1>Goodfellas</h1></div>
-            </div>
-        </div>
+        <Stack movieLogo={movieLogos1} movieName='Sword of Destiny' ></Stack>
+        <Stack movieLogo={movieLogos2} movieName='John Wane' ></Stack>
+        <Stack movieLogo={movieLogos3} movieName='Goodfellas' ></Stack>
+          </div>
+        
         <div className = 'container'>
-            <div className = 'item'><img src = {movieLogos4} />
-            <div className = 'overlay'><h1>al Capone</h1></div>
-            </div>
-            <div className = 'item'><img src = {movieLogos5} />
-            <div className = 'overlay'><h1>Scarface</h1></div>
-            </div>
-            <div className = 'item'><img src = {movieLogos6} />
-            <div className = 'overlay'><h1>Superman</h1></div>
-            </div>
-        </div>
+        <Stack movieLogo={movieLogos4} movieName='Al Capone' ></Stack>
+        <Stack movieLogo={movieLogos5} movieName='Scarface' ></Stack>
+        <Stack movieLogo={movieLogos6} movieName='Superman' ></Stack>
+          </div>
+        
         <div className = 'container'>
-            <div className = 'item'><img src = {movieLogos7} />
-            <div className = 'overlay'><h1>TinTin</h1></div>
-            </div>
-            <div className = 'item'><img src = {movieLogos8} />
-            <div className = 'overlay'><h1>Cliffhanger</h1></div>
-            </div>
-            <div className = 'item'><img src = {movieLogos9} />
-            <div className = 'overlay'><h1>the Good,the Bad,the Ugly</h1></div>
-            </div>
+          <Stack movieLogo={movieLogos7} movieName='TinTin' ></Stack>
+          <Stack movieLogo={movieLogos8} movieName='Cliffhanger' ></Stack>
+          <Stack movieLogo={movieLogos9} movieName='the Good,the Bad,the Ugly' ></Stack>
         </div>
     </div>
-      
-
   );
 }
+
+
 
 export default App;
