@@ -8,7 +8,11 @@ export default function Gallery()
 <div>
     <div className='container'>
     {   getMovies().map(movie => (
-        <TvShow key={movie.movie_id} movie_id={movie.movie_id} movieLogo={movie.movieLogo} movieName={movie.movieName} />
+        <TvShow 
+            key={movie.movie_id} 
+            movieId={movie.movie_id} 
+            movieLogo={movie.movie_Logo} 
+            movieName={movie.movie_Name} />
     ))
 
         }
