@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 import getMovies from './getMovies';
 import './Details.css'; 
 
@@ -26,9 +26,13 @@ export default class Details extends React.Component {
     }
 
     render() { 
-        return (
+
+        if(this.state.movie === undefined) {
+            return <Redirect to='/NotFound' />;
+        } else {
+            return (
             <div className='Details'>
-            <h1>{this.state.movie.movie_Name || 'no show found'}</h1>
+            <h1>{this.state.movie.movie_Name}</h1>
             <div className = 'content'>
             <div>{this.state.movie.movie_details}</div>
             <img src={this.state.movie.movie_Logo}
@@ -36,7 +40,12 @@ export default class Details extends React.Component {
             </div>
             <Link to='/'>Back</Link>
             </div>
-        );
+            );
+
+        };
+
+     
+        
     }
 }
 
