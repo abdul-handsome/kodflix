@@ -3,7 +3,7 @@ let getShows = function() {
     return [
         {   movie_id : 'swordofdestiny',
             movie_Name : 'swordofdestiny',
-            movie_details : 'Sword of Destiny (Polish original title: Miecz przeznaczenia), is the second (in its fictional chronology; first in Polish print) of the two collections of short stories (the other being The Last Wish), both preceding the main Witcher Saga. The stories were written by Polish fantasy writer Andrzej Sapkowski. The first Polish edition was published in 1992;[1] the English edition was published in the UK by Gollancz in 2015'},
+            movie_details : 'Sword of Destiny (fantastic fantastic fantastic: Miecz przeznaczenia), is the second (in its fictional chronology; first in Polish print) of the two collections of short stories (the other being The Last Wish), both preceding the main Witcher Saga. The stories were written by Polish fantasy writer Andrzej Sapkowski. The first Polish edition was published in 1992;[1] the English edition was published in the UK by Gollancz in 2015'},
            {movie_id: 'johnwane', 
            movie_Name: 'johnwane',
            movie_details: 'Marion Mitchell Morrison(born Marion Robert Morrison;[5] May 26, 1907 – June 11, 1979), known professionally as John Wayne andnicknamed'},
