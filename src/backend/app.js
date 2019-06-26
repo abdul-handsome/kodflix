@@ -6,4 +6,4 @@ const getShows = require('./shows');
 app.get('/rest/shows', (req, res) => res.send(getShows()))
 
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))npm 
