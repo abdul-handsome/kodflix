@@ -23,7 +23,17 @@ export default class Details extends React.Component {
                 movie
             });
 
+        fetch('/rest/shows/')
+        .then(function(response) {
+            return response.json();
+          })
+          .then(function(myJson) {
+            console.log('the data from backend is', JSON.stringify(myJson));
+          });
+
     }
+
+
 
     render() { 
 
